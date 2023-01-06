@@ -1,21 +1,6 @@
-# Name:     c_bls_data.py
-# Date:     April 14, 2022
-# Author:   Randy Runtsch
-#
-# Description:
-#
-# The c_bls_data class uses Version 2 of the US Bureau of Labor Statistics (BLS) API
-# to obtain one of more series of BLS data. It retrieves the data in
-# JavaScript Object Notation (JSON) format, converts the data to CSV records,
-# and writes those records to an output CSV file.
-#
-# The class can retrieve monthly data for one or more series for up to 20 years.
-#
 # To use this class, each use must provide their own BLS API Version 2
 # registration key from here: https://data.bls.gov/registrationEngine/
 #
-
-
 # To use the c_bls_data class, create an instance with these inputs:
 #
 # 1. BLS API registration key.
@@ -23,7 +8,6 @@
 # 2. List of BLS data series IDs.
 # 3. Start year of data.
 # 4. End year of data.
-#
 
 import requests
 import json
